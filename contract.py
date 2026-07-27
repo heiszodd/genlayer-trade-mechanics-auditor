@@ -3,6 +3,9 @@ GenLayer contract for auditing trading setups.
 Receives webhook with trading data, uses LLM to verify rules, records proof.
 """
 
+import time
+
+
 def audit_trade_setup(data):
     """Audit a trading setup.
     Args:
